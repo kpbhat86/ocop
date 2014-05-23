@@ -1,0 +1,4 @@
+<?php 
+define('WELFARE_CHILD_VERSION', '1.0');
+define('WELFARE_CHILD_FOLDER', 'welfare_child');
+define('WELFARE_CHILD_PATH', MODULES_PATH.WELFARE_CHILD_FOLDER.'/');

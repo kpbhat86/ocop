@@ -1,0 +1,27 @@
+<?php 
+$route[FUEL_ROUTE.'manage_ocop'] = FUEL_FOLDER.'/module';
+$route[FUEL_ROUTE.'manage_ocop/(.*)'] = FUEL_FOLDER.'/module/$1';
+$route[FUEL_ROUTE.'manage_ocop'] = 'manage_ocop';
+$route[FUEL_ROUTE.'manage_ocop/example'] = 'manage_ocop/example';
+$route[FUEL_ROUTE.'manage_ocop/listprimary'] = 'manage_ocop/listprimary';
+$route[FUEL_ROUTE.'manage_ocop/delete_summary'] = 'manage_ocop/delete_summary';
+$route[FUEL_ROUTE.'manage_ocop/delete_gi'] = 'manage_ocop/delete_gi';
+$route[FUEL_ROUTE.'manage_ocop/delete_bd'] = 'manage_ocop/delete_bd';
+$route[FUEL_ROUTE.'manage_ocop/delete_cd'] = 'manage_ocop/delete_cd';
+$route[FUEL_ROUTE.'manage_ocop/delete_im'] = 'manage_ocop/delete_im';
+$route[FUEL_ROUTE.'manage_ocop/delete_edu'] = 'manage_ocop/delete_edu';
+$route[FUEL_ROUTE.'manage_ocop/delete_pro'] = 'manage_ocop/delete_pro';
+$route[FUEL_ROUTE.'manage_ocop/delete_wf'] = 'manage_ocop/delete_wf';
+$route[FUEL_ROUTE.'manage_ocop/delete_dom'] = 'manage_ocop/delete_dom';
+$route[FUEL_ROUTE.'manage_ocop/delete_dof'] = 'manage_ocop/delete_dof';
+$route[FUEL_ROUTE.'manage_ocop/delete_dog'] = 'manage_ocop/delete_dog';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_gi'] = 'manage_ocop/list_secondary_gi';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_bd'] = 'manage_ocop/list_secondary_bd';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_cd'] = 'manage_ocop/list_secondary_cd';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_im'] = 'manage_ocop/list_secondary_im';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_edu'] = 'manage_ocop/list_secondary_edu';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_pro'] = 'manage_ocop/list_secondary_pro';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_wf'] = 'manage_ocop/list_secondary_wf';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_dom'] = 'manage_ocop/list_secondary_dom';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_dof'] = 'manage_ocop/list_secondary_dof';
+$route[FUEL_ROUTE.'manage_ocop/list_secondary_dog'] = 'manage_ocop/list_secondary_dog';

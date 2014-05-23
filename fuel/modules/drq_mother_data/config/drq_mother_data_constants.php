@@ -1,0 +1,4 @@
+<?php 
+define('DRQ_MOTHER_DATA_VERSION', '1.0');
+define('DRQ_MOTHER_DATA_FOLDER', 'drq_mother_data');
+define('DRQ_MOTHER_DATA_PATH', MODULES_PATH.DRQ_MOTHER_DATA_FOLDER.'/');

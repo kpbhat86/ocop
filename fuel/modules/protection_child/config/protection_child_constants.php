@@ -1,0 +1,4 @@
+<?php 
+define('PROTECTION_CHILD_VERSION', '1.0');
+define('PROTECTION_CHILD_FOLDER', 'protection_child');
+define('PROTECTION_CHILD_PATH', MODULES_PATH.PROTECTION_CHILD_FOLDER.'/');

@@ -1,0 +1,4 @@
+<?php 
+define('DRQ_IMMUNIZATION_VERSION', '1.0');
+define('DRQ_IMMUNIZATION_FOLDER', 'drq_immunization');
+define('DRQ_IMMUNIZATION_PATH', MODULES_PATH.DRQ_IMMUNIZATION_FOLDER.'/');

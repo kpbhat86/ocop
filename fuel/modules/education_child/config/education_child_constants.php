@@ -1,0 +1,4 @@
+<?php 
+define('EDUCATION_CHILD_VERSION', '1.0');
+define('EDUCATION_CHILD_FOLDER', 'education_child');
+define('EDUCATION_CHILD_PATH', MODULES_PATH.EDUCATION_CHILD_FOLDER.'/');

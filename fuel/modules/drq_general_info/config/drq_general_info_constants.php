@@ -1,0 +1,4 @@
+<?php 
+define('DRQ_GENERAL_INFO_VERSION', '1.0');
+define('DRQ_GENERAL_INFO_FOLDER', 'drq_general_info');
+define('DRQ_GENERAL_INFO_PATH', MODULES_PATH.DRQ_GENERAL_INFO_FOLDER.'/');

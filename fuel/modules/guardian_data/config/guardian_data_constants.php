@@ -1,0 +1,4 @@
+<?php 
+define('GUARDIAN_DATA_VERSION', '1.0');
+define('GUARDIAN_DATA_FOLDER', 'guardian_data');
+define('GUARDIAN_DATA_PATH', MODULES_PATH.GUARDIAN_DATA_FOLDER.'/');
