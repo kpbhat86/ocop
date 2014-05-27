@@ -95,6 +95,28 @@
 			</select>
 		</td>
 	</tr>
+		<tr>
+		<td><label><span class="bluemark">CI 3.8</span> ಮಗುವಿಗೆ ಮದುವೆ ಆಗಿದೆಯೆ?/Is the child married?</label></td>
+		<td>
+			<select id="chldmar" name="chldmar" style="width:175px;">
+				<option value="">-- ಆಯ್ಕೆಮಾಡಿ /  Select --</option>
+				<option value="Yes">ಹೌದು  /YES</option>
+				<option value="No"> ಇಲ್ಲ   / NO</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr id="marrdate">
+		<td><label><span class="bluemark">CI 3.9</span> ಮದುವೆ ಆದ ದಿನಾಂಕ /Date of marriage</label></td>
+			<td>  
+					<input id="txtdate" name="txtdate"  type="text" />	
+						<script type="text/javascript">
+							$(txtdate).datepick({dateFormat: 'dd-mm-yyyy'});
+						</script>
+					</select>
+			</td>	
+	</tr>
+	
 	<tr>
 		<td>&nbsp;</td>
 		<td class="actions">
