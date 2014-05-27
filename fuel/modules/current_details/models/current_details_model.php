@@ -39,7 +39,9 @@ class current_details_model extends Base_module_model {
 		$assistance_recieved = $_POST['assistance_recieved'];
 		$assistance_given  	= $_POST['assistance_given'];
 		$health_center 		= $_POST['health_center'];
-		$data = array('household_voters_id' => $voterid, 'summary_id' => $summary_id, 'child_weight' => $child_weight, 'child_height' => $child_height, 'child_disability' => $child_disability, 'child_problem' => $child_problem, 'assistance_recieved' => $assistance_recieved, 'assistance_given' => $assistance_given, 'health_center' => $health_center);
+		$chldmar 		= $_POST['chldmar'];
+		$marrdate 		= $_POST['marrdate'];
+		$data = array('household_voters_id' => $voterid, 'summary_id' => $summary_id, 'child_weight' => $child_weight, 'child_height' => $child_height, 'child_disability' => $child_disability, 'child_problem' => $child_problem, 'assistance_recieved' => $assistance_recieved, 'assistance_given' => $assistance_given, 'health_center' => $health_center , 'chldmar' => $chldmar, 'marrdate' => $marrdate );
 	    $this->db->insert('ocop_current_details', $data);  
 		$inserted = $this->db->insert_id();
 		if($inserted){ 

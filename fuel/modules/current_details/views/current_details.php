@@ -56,11 +56,13 @@ function savecurrentdetails(){
 	var assistance_recieved = $("#ddlassistancerecvd option:selected").val();
 	var assistance_given = $("#ddlsssistancesrc option:selected").val();
 	var health_center = $("#ddlhcenter option:selected").val();
+	var chldmar = $("#chldmar option:selected").val();
+	var marrdate = $("#marrdate option:selected").val();
 	if ( voterid == "" || summary_id == "" || child_disability == ""  || child_problem == "" )
 	{
 		alert('Please enter all mandatory fields');
 	}else{
-		var dataString = 'voterid='+voterid+'&summary_id='+summary_id+'&child_weight='+child_weight+'&child_height='+child_height+'&child_disability='+child_disability+'&child_problem='+child_problem+'&assistance_recieved='+assistance_recieved+'&assistance_given='+assistance_given+'&health_center='+health_center;
+		var dataString = 'voterid='+voterid+'&summary_id='+summary_id+'&child_weight='+child_weight+'&child_height='+child_height+'&child_disability='+child_disability+'&child_problem='+child_problem+'&assistance_recieved='+assistance_recieved+'&assistance_given='+assistance_given+'&health_center='+health_center+'&chldmar='+chldmar+'&marrdate='+marrdate;
 		$.ajax({  
 			type: "POST",  
 			url	: "<?php echo fuel_url('current_details/savecurrentdetails');?>/",  
@@ -81,6 +83,8 @@ function savecurrentdetails(){
 <script type="text/javascript">
 $(document).ready(function() {
 	$("#divassistancerecvd").hide(); 
+	$("#marrdate").hide(); 
+	
 $("#ddlchildname").change(function(data) {
 		var household_id = $('#txtvoterid').val();
 		var child_name = $("#ddlchildname option:selected").val();
@@ -107,6 +111,15 @@ $("#ddlchildname").change(function(data) {
 			$("#divassistance").show();
 		}else{
 			$("#divassistance").hide();
+		}
+    });
+	
+	    $("#chldmar").change(function(data) {
+        var assistance_recieved = $("#chldmar option:selected").val();
+		if(assistance_recieved == 'Yes'){
+			$("#marrdate").show();
+		}else{
+			$("#marrdate").hide();
 		}
     });
 
