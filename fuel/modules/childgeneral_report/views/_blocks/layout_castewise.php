@@ -17,6 +17,9 @@
 		<td>
 			<input style="cursor: pointer;" type="button" id="txtclickpdf" value="Click to Generate Report">
 		</td>
+			<td>
+			<input style="cursor: pointer;" type="button" id="txtclickpdf1" value="Click to view Individual Report">
+		</td>
 	</tr>
 </table>	
 </div>
@@ -230,5 +233,33 @@ for(j=0;j<name.length;j++) {
 }]
     });
 }
+
+
+
+$("#txtclickpdf1").click(function() {
+	var ddlpanchayat = $("#ddlpanchayat option:selected").val();
+	var ddlvillage = $("#ddlvillage option:selected").val();
+	var txtyear = $('#txtyear').val();
+	var txtreportlevel = $('#txtreportlevel').val();
+	var txttaluk = $('#txttaluk').val();
+	var txtdistrict = $('#txtdistrict').val();
+	var txtdivision = $('#txtdivision').val();
+	var txtstate = $('#txtstate').val();
+	var ddlagebreakup = $('#ddlagebreakup').val();
+	var dataString =  'ddlpanchayat='+ddlpanchayat+'&ddlvillage='+ddlvillage+'&txtyear='+txtyear+'&txtreportlevel='+txtreportlevel+'&txttaluk='+txttaluk+'&txtdistrict='+txtdistrict+'&txtdivision='+txtdivision+'&txtstate='+txtstate;
+	if(txtyear=='' || ddlpanchayat == ''  || ddlvillage == ''){   
+		alert("Please select all the values to generate PDF!!");
+	} 
+	else{
+		$.ajax({  
+		type: "POST",  
+		success: function(msg){  
+			var dataStringone =  'ddlpanchayat='+ddlpanchayat+'&ddlvillage='+ddlvillage+'&txtyear='+txtyear+'&txtreportlevel='+txtreportlevel+'&txttaluk='+txttaluk+'&txtdistrict='+txtdistrict+'&txtdivision='+txtdivision+'&txtstate='+txtstate;
+			var url = "<?php echo fuel_url('childgeneral_report/childcaste_Individualreport_pdf');?>/?"+dataStringone;
+			window.open(url);
+			}  
+		}); 
+	}
+});
 </script>
 

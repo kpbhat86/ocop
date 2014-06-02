@@ -604,6 +604,27 @@ class childgeneral_report extends Fuel_base_controller {
 		$childgenerateb = $this->childgeneral_report_model->religionreportgeneratemodel( $ddlvillage, $ddlpanchayat, $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
 	}
 	
+	
+	
+		function childcaste_Individualreport_pdf(){
+	if ($this->fuel_auth->has_permission('childgeneral_report/childcaste_Individualreport_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);
+		$ddlvillage = $args["ddlvillage"];
+		$ddlpanchayat = $args["ddlpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childgeneral_report_model');
+		$childgenerateb = $this->childgeneral_report_model->childcaste_Individualreport_pdf( $ddlvillage, $ddlpanchayat, $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
 }
 /* End of file */
 /* Location: ./fuel/modules/controllers*/

@@ -198,6 +198,9 @@ $(document).ready(function() {
 	$("#divcm4").hide();
 	$("#divcm5").hide();
 	$("#divcm6").hide();
+	
+	
+	$("#divcr11").hide();
 	$("#divcmarr").hide();
 	$("#divdds").hide();
 	$("#divcr1").hide();
@@ -230,8 +233,10 @@ $(document).ready(function() {
 		var devadasi_sys = $("#ddldevadasisys option:selected").val();
 		if(devadasi_sys == 'Yes'){
 			$("#divdds").show();
+			$("#divcr11").show();
 		}else{
 			$("#divdds").hide();
+			$("#divcr11").hide();
 		}
 	});
 	$("#ddlchildrescued").change(function(data) {

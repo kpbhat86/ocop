@@ -51,6 +51,7 @@
 				<option value="Availed"> ಪಡೆದಿದ್ದರೆ / Availed</option>
 				<option value="Not Availed"> ಪಡೆದಿಲ್ಲ / Not Availed</option>
 				<option value="Not Aware"> ಮಾಹಿತಿ ಇಲ್ಲ /  Not Aware</option>
+				<option value="Not Aware">ಅನ್ವಹಿಸುವುದಿಲ್ಲ /  Not Applicable</option>
 			</select>
 		</td>
 	</tr>
