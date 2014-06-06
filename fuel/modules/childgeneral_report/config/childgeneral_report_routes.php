@@ -58,4 +58,4 @@ $route[FUEL_ROUTE.'childgeneral_report/orphanwisereport_multiple_bar']     = 'ch
 
 $route[FUEL_ROUTE.'childgeneral_report/childgeneral_Individualreport_pdf']     = 'childgeneral_report/childgeneral_Individualreport_pdf';
 $route[FUEL_ROUTE.'childgeneral_report/childcaste_Individualreport_pdf']     = 'childgeneral_report/childcaste_Individualreport_pdf';
-
+$route[FUEL_ROUTE.'childgeneral_report/childagewise_grama_pdf']     = 'childgeneral_report/childagewise_grama_pdf';

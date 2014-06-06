@@ -625,6 +625,24 @@ class childgeneral_report extends Fuel_base_controller {
 		}
 	}
 	
+		function childagewise_grama_pdf(){
+	if ($this->fuel_auth->has_permission('childgeneral_report/childagewise_grama_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);		
+		$txtpanchayat = $args["txtpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childgeneral_report_model');
+		$childgenerateb = $this->childgeneral_report_model->childagewise_grama_pdf( $txtpanchayat , $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
 }
 /* End of file */
 /* Location: ./fuel/modules/controllers*/
