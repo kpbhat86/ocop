@@ -146,22 +146,22 @@
 			<td>  
 				<select id="txtrel" name="txtrel" style="width:70px;">
 					<option value="0" >Select</option>
-					<option value="1" >Father</option>
-					<option value="2" >Mother</option>
-					<option value="3" >Elder Brother</option>
-					<option value="4" >Younger Brother</option>
-					<option value="5" >Elder Sister</option>
-					<option value="6" >Younger Sister</option>
-					<option value="7" >Husband</option>
-					<option value="8" >Wife</option>
-					<option value="9" >Son</option>
-					<option value="10" >Daughter</option>
-					<option value="11" >Head of Family</option>
-					<option value="12" >Grandson</option>
-					<option value="13" >Granddaughter</option>
-					<option value="14" >Daughter-in-law</option>
-					<option value="15" >Son-in-law</option>
-					<option value="16">Others</option>
+					<option value="Father" >Father</option>
+					<option value="Mother" >Mother</option>
+					<option value="ElderBrother" >Elder Brother</option>
+					<option value="YoungerBrother" >Younger Brother</option>
+					<option value="ElderSister" >Elder Sister</option>
+					<option value="YoungerSister" >Younger Sister</option>
+					<option value="Husband" >Husband</option>
+					<option value="Wife" >Wife</option>
+					<option value="Son" >Son</option>
+					<option value="Daughter" >Daughter</option>
+					<option value="HeadofFamily" >Head of Family</option>
+					<option value="Grandson" >Grandson</option>
+					<option value="Granddaughter" >Granddaughter</option>
+					<option value="Daughter-in-law" >Daughter-in-law</option>
+					<option value="Son-in-law" >Son-in-law</option>
+					<option value="Others">Others</option>
 				</select>
 				
 				
