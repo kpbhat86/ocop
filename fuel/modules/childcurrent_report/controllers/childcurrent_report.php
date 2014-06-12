@@ -968,6 +968,91 @@ class childcurrent_report extends Fuel_base_controller {
 		$childgenerateb = $this->childcurrent_report_model->childnonenrolment_pdf( $ddlvillage, $ddlpanchayat, $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
 	}
 	
+	
+	
+			function childdropout_grama_pdf(){
+	if ($this->fuel_auth->has_permission('childcurrent_report/childdropout_grama_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);		
+		$txtpanchayat = $args["txtpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childcurrent_report_model');
+		$childgenerateb = $this->childcurrent_report_model->childdropout_grama_pdf( $txtpanchayat , $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
+	
+	
+	
+		function childprimary_grama_pdf(){
+	if ($this->fuel_auth->has_permission('childcurrent_report/childprimary_grama_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);		
+		$txtpanchayat = $args["txtpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childcurrent_report_model');
+		$childgenerateb = $this->childcurrent_report_model->childprimary_grama_pdf( $txtpanchayat , $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
+	
+			function childbirthreg_grama_pdf(){
+	if ($this->fuel_auth->has_permission('childcurrent_report/childbirthreg_grama_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);		
+		$txtpanchayat = $args["txtpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childcurrent_report_model');
+		$childgenerateb = $this->childcurrent_report_model->childbirthreg_grama_pdf( $txtpanchayat , $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
+	
+	
+				function childchildminor_pdf(){
+	if ($this->fuel_auth->has_permission('childcurrent_report/childchildminor_pdf'))
+		{
+		$queryStr = $_SERVER['QUERY_STRING'];
+        parse_str($queryStr, $args);		
+		$txtpanchayat = $args["txtpanchayat"];
+		$txttaluk = $args["txttaluk"];
+		$txtdistrict = $args["txtdistrict"];
+		$txtdivision = $args["txtdivision"];
+		$txtstate = $args["txtstate"];
+		$txtreportlevel = $args["txtreportlevel"];
+		$txtyear = $args["txtyear"];
+		//$ddlagebreakup = $args["ddlagebreakup"];
+		$this->load->module_model(CHILDGENERAL_REPORT_FOLDER, 'childcurrent_report_model');
+		$childgenerateb = $this->childcurrent_report_model->childchildminor_pdf( $txtpanchayat , $txttaluk,  $txtdistrict, $txtdivision, $txtstate, $txtreportlevel, $txtyear );
+		}
+	}
+	
+	
+	
+	
+	
+	
 
 	
 }

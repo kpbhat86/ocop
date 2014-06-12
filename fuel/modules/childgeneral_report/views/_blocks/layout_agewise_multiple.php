@@ -17,6 +17,9 @@
 		<td>
 			<input style="cursor: pointer;" type="button" id="txtclickpdf" value="Click to Generate Report">
 		</td>
+		<td>
+			<input style="cursor: pointer;" type="button" id="txtclickpdf1" value="Click to view Individual Report">
+		</td>
 	</tr>
 </table>	
 </div>
@@ -86,6 +89,35 @@ var ddlpanchayat = $("#ddlpanchayat").val();
 		drawAgewisereport(retData); 
 	});
 }
+
+
+
+$("#txtclickpdf1").click(function() {
+	var ddlpanchayat = $("#ddlpanchayat").val();
+	var txtyear = $('#txtyear').val();
+	var txtreportlevel = $('#txtreportlevel').val();
+	var txttaluk = $("#txttaluk option:selected").val();
+	var txtdistrict = $("#txtdistrict option:selected").val();
+	var txtdivision = $("#txtdivision option:selected").val();
+	var txtstate = $("#txtstate option:selected").val();
+	document.getElementById('txtpanchayat').value = ddlpanchayat;
+	var txtpanchayat = $('#txtpanchayat').val();
+	var dataString =  'txtyear='+txtyear+'&txtreportlevel='+txtreportlevel+'&txttaluk='+txttaluk+'&txtdistrict='+txtdistrict+'&txtdivision='+txtdivision+'&txtstate='+txtstate+'&txtpanchayat='+txtpanchayat;
+	if(txtyear=='' ){   
+		alert("Please select all the values to generate PDF!!");
+    }	
+	else{
+	$.ajax({  
+		type: "POST",  
+		success: function(msg){  
+			var dataStringone =  'txtpanchayat='+txtpanchayat+'&txtyear='+txtyear+'&txtreportlevel='+txtreportlevel+'&txttaluk='+txttaluk+'&txtdistrict='+txtdistrict+'&txtdivision='+txtdivision+'&txtstate='+txtstate;
+			var url = "<?php echo fuel_url('childgeneral_report/childagewise_grama_pdf');?>/?"+dataStringone;
+		    window.open(url);
+		}  
+	}); 
+	}
+});
+
 
 
 

@@ -115,3 +115,8 @@ $route[FUEL_ROUTE.'childcurrent_report/disability_bargraphmultiple']     = 'chil
 $route[FUEL_ROUTE.'childcurrent_report/disability_piemultiple']     = 'childcurrent_report/disability_piemultiple';
 $route[FUEL_ROUTE.'childcurrent_report/childindividual_pdf']     = 'childcurrent_report/childindividual_pdf';
 $route[FUEL_ROUTE.'childcurrent_report/layout_child_individual_selection']     = 'childcurrent_report/layout_child_individual_selection';
+$route[FUEL_ROUTE.'childcurrent_report/childdropout_grama_pdf']     = 'childcurrent_report/childdropout_grama_pdf';
+$route[FUEL_ROUTE.'childcurrent_report/childprimary_grama_pdf']     = 'childcurrent_report/childprimary_grama_pdf';
+$route[FUEL_ROUTE.'childcurrent_report/childbirthreg_grama_pdf']     = 'childcurrent_report/childbirthreg_grama_pdf';
+$route[FUEL_ROUTE.'childcurrent_report/childchildminor_pdf']     = 'childcurrent_report/childchildminor_pdf';
+
